@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	
+	int nota1, nota2, nota3, media, soma;
+	soma = 0;
+		System.out.println("Digite as notas.");
+
+		nota1 = scanner.nextInt();
+		nota2 = scanner.nextInt();
+	    nota3 = scanner.nextInt();
+	    soma = nota1+ nota2+ nota3;
+	    media = soma / 3;
+	    
+	    if ( media < 3) {
+	        System.out.println("Você foi REPROVRADO. Sua media foi "+media);
+	    } else if ( media >= 3&& media < 7) {
+	        System.out.println("Você deve fazer o EXAME. Sua media foi "+media);
+	        
+	    } else {
+	        System.out.println("Você foi APROVADO. Sua media foi "+media);
+	    }
+	    
+
+	}
+}
