@@ -1,1 +1,23 @@
-oi
+import java.util.Scanner;
+
+public class Main
+{
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int maior;
+		int numero;
+
+		System.out.println("Digite o primeiro numero");
+		maior = scanner.nextInt();
+		System.out.println("Digite o segundo numero");
+		numero = scanner.nextInt();
+
+		if ( numero > maior ) {
+			maior = numero;
+		}
+
+		System.out.println("O maior numero é " + maior);
+
+	}
+}
